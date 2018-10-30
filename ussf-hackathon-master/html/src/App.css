@@ -1,0 +1,131 @@
+body {
+	background: #eee;
+	color: #333;
+}
+
+.App {
+	background: #fafafa;
+	margin: 0 auto;
+	max-width: 800px;
+	padding: 10px 20px;
+}
+
+#savings {
+	text-align: right;
+}
+
+#footer {
+	font-size: .8rem;
+	text-align: center;
+}
+
+#footer a {
+	color: #444;
+}
+
+#footer ul,
+#footer li {
+	display: inline;
+}
+
+#footer li:not(:last-child):after {
+	padding: 8px;
+	content:"\00b7";
+}
+
+small {
+	font-size: .7rem;
+	color: #444;
+}
+
+.search {
+	text-align: center;
+}
+
+.search input {
+	outline: none;
+	font-size: 1.6rem;
+	width: 100%;
+}
+
+.results {
+	text-align: left;
+}
+
+.comparison,
+.comparePlayers {
+	display: flex;
+}
+
+.comparison ul {
+	padding: 0;
+	margin: 0;
+}
+
+.player {
+	padding: 1em;
+}
+
+.player img {
+	width: 120px;
+	height: 120px;
+}
+
+.playerRow {
+	list-style: none;
+	padding: 5px;
+	vertical-align: baseline;
+}
+
+.playerRow a {
+	text-decoration: none;
+	color: #111;
+	background: #eee;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+.playerRow a:hover {
+	background: #ddd;
+}
+
+.playerRow img {
+	vertical-align: middle;
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+}
+
+.wage {
+	color: #666;
+	font-size: .8em;
+	padding: 5px;
+}
+
+.comparison .group,
+.comparePlayers .player {
+	flex: 1;
+}
+
+@media all and (max-width: 700px) {
+	.comparePlayers {
+		display: block;
+	}
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+	color: #222;
+}
+
+h1 {
+	font-size: 1.4rem;
+}
+
+h2 {
+	font-size: 1.2rem;
+}
+
+h3, h4, h5 {
+	font-size: 1rem
+}
